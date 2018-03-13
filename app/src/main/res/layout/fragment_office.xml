@@ -12,26 +12,26 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/C_Event"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="Create Event"
-            app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintEnd_toStartOf="@+id/C_Reminder"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/C_Reminder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="Create Reminder"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button6"
+            app:layout_constraintStart_toEndOf="@+id/C_Event"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ListView

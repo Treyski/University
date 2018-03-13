@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/C_New_Mess"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"

@@ -5,8 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.the_next_development.drawer.GroupFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,7 +14,7 @@
             android:layout_width="118dp"
             android:layout_height="55dp"
             android:layout_marginTop="40dp"
-            android:text="Create Group"
+            android:text="@string/c_group"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/J_Group"
@@ -27,7 +25,7 @@
             android:layout_width="117dp"
             android:layout_height="55dp"
             android:layout_marginTop="40dp"
-            android:text="Join Class"
+            android:text="@string/j_class"
             app:layout_constraintEnd_toStartOf="@+id/J_Group"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread"
@@ -39,7 +37,7 @@
             android:layout_width="117dp"
             android:layout_height="55dp"
             android:layout_marginTop="40dp"
-            android:text="Join Group"
+            android:text="@string/j_group"
             app:layout_constraintEnd_toStartOf="@+id/C_Group"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/J_Class"

@@ -1,5 +1,7 @@
 package com.the_next_development.drawer;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -113,5 +115,12 @@ public class MainActivity extends AppCompatActivity
         //make this method blank
         return true;
     }
+
+    /*
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, MessageActivity.class);
+        startActivity(intent);
+    }
+    */
 
 }

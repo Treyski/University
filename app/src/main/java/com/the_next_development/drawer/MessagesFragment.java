@@ -1,11 +1,13 @@
 package com.the_next_development.drawer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 public class MessagesFragment extends Fragment {
@@ -15,7 +17,18 @@ public class MessagesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //returning our layout file
         //change R.layout.yourlayoutfilename for each of your fragments
-        return inflater.inflate(R.layout.fragment_messages, container, false);
+        View view = inflater.inflate(R.layout.fragment_messages, container, false);
+
+        Button Test = (Button) view.findViewById(R.id.Test);
+        Test.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent in = new Intent(getActivity(), MessageActivity.class);
+                startActivity(in);
+            }
+        });
+
+        return view;
     }
 
 
@@ -25,7 +38,5 @@ public class MessagesFragment extends Fragment {
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("Messages");
     }
-
-
 
 }

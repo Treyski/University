@@ -43,5 +43,6 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="intro_login">Welcome to University Hub! Login with your Google Account.</string>
 
 </resources>

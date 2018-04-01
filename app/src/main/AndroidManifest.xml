@@ -60,19 +60,23 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
 
-        <activity android:name=".MessageActivity"
+        <activity
+            android:name=".MessageActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.the_next_development.drawer.MainActivity" />
         </activity>
 
-        <service android:name=".MyJobService"
+        <service
+            android:name=".MyJobService"
             android:exported="false">
-        <intent-filter>
-            <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
-        </intent-filter>
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
         </service>
+
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
